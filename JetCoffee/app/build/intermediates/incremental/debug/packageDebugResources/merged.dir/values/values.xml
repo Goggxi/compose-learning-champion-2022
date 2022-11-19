@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">JetCoffee</string>
+    <string name="category_all">All</string>
+    <string name="category_americano">Americano</string>
+    <string name="category_cappuccino">Cappuccino</string>
+    <string name="category_espresso">Espresso</string>
+    <string name="category_frappe">Frappe</string>
+    <string name="category_latte">Latte</string>
+    <string name="category_macchiato">Macchiato</string>
+    <string name="category_mocha">Mocha</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="placeholder_search">Cari kopi pilihanmu!</string>
+    <string name="section_best_seller_menu">Menu Terlaris</string>
+    <string name="section_category">Mau ngopi apa hari ini?</string>
+    <string name="section_favorite_menu">Menu Favorit</string>
+    <style name="Theme.JetCoffee" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+</resources>
