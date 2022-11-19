@@ -1,0 +1,118 @@
+[
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_icon_category_frappe.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/icon_category_frappe.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/xml_data_extraction_rules.xml.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_icon_category_all.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/icon_category_all.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_menu4.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/menu4.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_icon_category_cappuccino.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/icon_category_cappuccino.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_icon_category_espresso.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/icon_category_espresso.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_icon_category_macchiato.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/icon_category_macchiato.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_menu1.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/menu1.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_icon_category_mocha.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/icon_category_mocha.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_icon_category_latte.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/icon_category_latte.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_menu3.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/menu3.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_banner.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/banner.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_icon_category_americano.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/icon_category_americano.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/xml_backup_rules.xml.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_menu2.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/menu2.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.goggxi.jetcoffee.app-merged_res-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.goggxi.jetcoffee.app-main-37:/mipmap-xxhdpi/ic_launcher_round.webp"
+    }
+]
