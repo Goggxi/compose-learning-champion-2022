@@ -9,22 +9,22 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
+import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color.Companion.LightGray
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.goggxi.jetcoffee.models.Menu
-import com.goggxi.jetcoffee.models.dummyBestSellerMenu
-import com.goggxi.jetcoffee.models.dummyCategory
-import com.goggxi.jetcoffee.models.dummyMenu
-import com.goggxi.jetcoffee.ui.components.CategoryItem
-import com.goggxi.jetcoffee.ui.components.MenuItem
-import com.goggxi.jetcoffee.ui.components.SearchBar
-import com.goggxi.jetcoffee.ui.components.SectionText
+import com.goggxi.jetcoffee.models.*
+import com.goggxi.jetcoffee.ui.components.*
 import com.goggxi.jetcoffee.ui.theme.JetCoffeeTheme
 
 class MainActivity : ComponentActivity() {
@@ -40,20 +40,35 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun JetCoffeeApp() {
-    Column(
-        modifier = Modifier.verticalScroll(rememberScrollState())) {
-        Banner()
-        SectionText(stringResource(R.string.section_category))
-        CategoryRow()
-        SectionText(stringResource(R.string.section_favorite_menu))
-        MenuRow(dummyMenu)
-        SectionText(stringResource(R.string.section_best_seller_menu))
-        MenuRow(dummyBestSellerMenu)
-    }
+   Scaffold(
+       bottomBar = { BottomBar() }
+   ) {
+       Column(
+           modifier = Modifier
+               .verticalScroll(rememberScrollState())
+               .padding(it)
+       ) {
+           Banner()
+           HomeSection(
+               title = stringResource(R.string.section_category),
+               content = { CategoryRow() }
+           )
+           HomeSection(
+               title = stringResource(R.string.section_favorite_menu),
+               modifier = Modifier,
+               content = { MenuRow(dummyMenu) }
+           )
+           HomeSection(
+               title = stringResource(R.string.section_best_seller_menu),
+               modifier = Modifier,
+               content = { MenuRow(dummyBestSellerMenu) }
+           )
+       }
+   }
 }
 
 
-@Preview(showBackground = true, device = Devices.PIXEL_4, showSystemUi = true)
+@Preview(showBackground = true, device = Devices.PIXEL_4, showSystemUi = true, group = "Full Jet Coffee App")
 @Composable
 fun JetCoffeeAppPreview() {
     JetCoffeeTheme {
@@ -76,7 +91,7 @@ fun Banner(
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, group = "components")
 @Composable
 fun BannerPreview() {
     JetCoffeeTheme {
@@ -100,11 +115,11 @@ fun CategoryRow(
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, group = "components")
 @Composable
 fun CategoryRowPreview() {
     JetCoffeeTheme {
-        CategoryRow()
+        CategoryRow(modifier = Modifier.padding(vertical =  16.dp))
     }
 }
 
@@ -125,11 +140,61 @@ fun MenuRow(
 
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, group = "components")
 @Composable
 fun MenuRowPreview() {
     JetCoffeeTheme {
-        MenuRow(listMenu = dummyMenu)
+        MenuRow(listMenu = dummyMenu, modifier = Modifier.padding(vertical =  16.dp))
     }
 }
 
+@Composable
+fun BottomBar(
+    modifier: Modifier = Modifier
+) {
+    BottomNavigation(
+        backgroundColor = MaterialTheme.colors.background,
+        contentColor = MaterialTheme.colors.primary,
+        modifier = modifier
+    ) {
+        val navigationItems = listOf(
+            BottomBarItem(
+                title = stringResource(R.string.menu_home),
+                icon = Icons.Default.Home
+            ),
+            BottomBarItem(
+                title = stringResource(R.string.menu_favorite),
+                icon = Icons.Default.Favorite
+            ),
+            BottomBarItem(
+                title = stringResource(R.string.menu_profile),
+                icon = Icons.Default.AccountCircle
+            ),
+        )
+
+        navigationItems.map {
+            BottomNavigationItem(
+                icon = {
+                    Icon(
+                        imageVector = it.icon,
+                        contentDescription = it.title
+                    )
+                },
+                label = {
+                    Text(it.title)
+                },
+                selected = it.title == navigationItems[0].title,
+                unselectedContentColor = LightGray,
+                onClick = {}
+            )
+        }
+    }
+}
+
+@Preview(showBackground = true, group = "components")
+@Composable
+fun BottomBarPreview() {
+    JetCoffeeTheme {
+        BottomBar()
+    }
+}
