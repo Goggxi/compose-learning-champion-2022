@@ -28,51 +28,22 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun MyNavDrawerApp() {
-    val scaffoldState = rememberScaffoldState()
-    val scope = rememberCoroutineScope()
-    val context =  LocalContext.current
+    val appState = rememberMyNavDrawerState()
 
     Scaffold(
-        scaffoldState = scaffoldState,
+        scaffoldState = appState.scaffoldState,
         topBar = {
-            MyTopBar(
-                onMenuClick = {
-                    scope.launch {
-                        scaffoldState.drawerState.open()
-                    }
-                }
-            )
+            MyTopBar(onMenuClick =  appState::onMenuClick )
+//            MyTopBar(onMenuClick = { appState.onMenuClick() })
         },
         drawerContent = {
             MyDrawerContent(
-                onItemSelected = {
-                    scope.launch {
-                        scaffoldState.drawerState.close()
-                            val snackBarResult =  scaffoldState.snackbarHostState.showSnackbar(
-                                message = context.resources.getString(R.string.coming_soon, it),
-                                actionLabel = context.resources.getString(R.string.subscribe_question),
-                            )
-
-                            if (snackBarResult == SnackbarResult.ActionPerformed) {
-                                Toast.makeText(
-                                    context,
-                                    context.resources.getString(R.string.subscribed_info),
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            }
-                    }
-                },
-                onBackPress = {
-                    if (scaffoldState.drawerState.isOpen) {
-                        scope.launch {
-                            scaffoldState.drawerState.close()
-                        }
-                    }
-                }
+                onItemSelected = appState::onItemSelected,
+                onBackPress = appState::onBackPress,
             )
         },
 
-        drawerGesturesEnabled = scaffoldState.drawerState.isOpen
+        drawerGesturesEnabled =  appState.scaffoldState.drawerState.isOpen
     ) {
 
     }
