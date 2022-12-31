@@ -26,8 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             GoggxiMoviesTheme {
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
                 ) {
                     GoggxiMoviesApp(
                         modifier = Modifier,

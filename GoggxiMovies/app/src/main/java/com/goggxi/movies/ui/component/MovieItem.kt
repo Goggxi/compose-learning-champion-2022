@@ -21,24 +21,19 @@ import com.goggxi.movies.ui.theme.GoggxiMoviesTheme
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalGlideComposeApi::class)
 @Composable
 fun MovieItem(
-    modifier: Modifier = Modifier,
-    movie: Model,
-    onClick: (Model) -> Unit
+    modifier: Modifier = Modifier, movie: Model, onClick: (Model) -> Unit
 ) {
-    Card(
-        modifier = modifier
-            .width(140.dp)
-            .height(240.dp)
-            .padding(top = 16.dp, start = 4.dp, end = 4.dp, bottom = 16.dp),
+    Card(modifier = modifier
+        .width(140.dp)
+        .height(240.dp)
+        .padding(top = 16.dp, start = 4.dp, end = 4.dp, bottom = 16.dp),
         shape = RoundedCornerShape(16.dp),
-        onClick = { onClick(movie) }
-    ) {
+        onClick = { onClick(movie) }) {
         GlideImage(
             model = "https://image.tmdb.org/t/p/w780${movie.posterPath}",
             contentDescription = movie.title,
             contentScale = ContentScale.FillBounds,
-            modifier = Modifier
-                .fillMaxSize()
+            modifier = Modifier.fillMaxSize()
         )
     }
 }

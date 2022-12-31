@@ -22,7 +22,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import androidx.navigation.navDeepLink
 import com.goggxi.movies.ui.navigation.NavigationItem
 import com.goggxi.movies.ui.navigation.Screen
 import com.goggxi.movies.ui.screen.detail.DetailScreen
@@ -67,8 +66,8 @@ fun GoggxiMoviesApp(
             composable(Screen.Profile.route) {
                 ProfileScreen(
                     modifier = Modifier,
-                    navigateToWeb = {title, url ->
-                        navController.navigate(Screen.WebView.createRoute(title= title, url = url))
+                    navigateToWeb = { title, url ->
+                        navController.navigate(Screen.WebView.createRoute(title = title, url = url))
                     }
                 )
             }
@@ -91,7 +90,7 @@ fun GoggxiMoviesApp(
             composable(
                 route = Screen.WebView.route,
                 arguments = listOf(
-                    navArgument("title") { type = NavType.StringType},
+                    navArgument("title") { type = NavType.StringType },
                     navArgument("url") { type = NavType.StringType }
                 ),
             ) {
@@ -100,7 +99,7 @@ fun GoggxiMoviesApp(
                 if (title != null && url != null) {
                     WebViewScreen(
                         title = title,
-                        url= url,
+                        url = url,
                         navigateBack = { navController.navigateUp() },
                     )
                 }

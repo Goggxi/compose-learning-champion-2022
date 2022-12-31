@@ -1,18 +1,14 @@
 package com.goggxi.movies.ui.screen.favorite
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Lock
-import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.goggxi.movies.ui.component.SearchBar
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -20,7 +16,7 @@ import com.goggxi.movies.ui.component.SearchBar
 fun FavoriteScreen(
     modifier: Modifier = Modifier,
 ) {
-    Scaffold (
+    Scaffold(
         topBar = {
             TopAppBar(
                 title = {

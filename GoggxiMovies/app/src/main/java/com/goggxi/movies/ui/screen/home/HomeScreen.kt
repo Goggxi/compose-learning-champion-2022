@@ -25,7 +25,7 @@ import com.goggxi.movies.ui.utils.PlatformsUiState
 fun HomeScreen(
     modifier: Modifier = Modifier,
     homeViewModel: HomeViewModel = viewModel(),
-    navigateToDetail: (id: Long, isTv: Boolean ) -> Unit,
+    navigateToDetail: (id: Long, isTv: Boolean) -> Unit,
 ) {
     Scaffold(topBar = {
         TopAppBar(title = {},
